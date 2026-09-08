@@ -1,6 +1,6 @@
 # Retro Tetris: Fable vs Astra
 
-Two complete, single-file falling-block games. Same rules family, two visual languages — a colour-pencil sheet photographed on 16mm, and a paper arcade cabinet with film grain.
+Three complete, single-file falling-block games. Same rules family, three visual languages — a colour-pencil sheet photographed on 16mm, a paper arcade cabinet with film grain, and a sketchbook film edition.
 
 No build step. No server. Open a file, or play them on GitHub Pages.
 
@@ -10,6 +10,7 @@ No build step. No server. Open a file, or play them on GitHub Pages.
 | --- | --- | --- |
 | **Graphite Blocks** (Fable) | [`Tetris-Fable.html`](Tetris-Fable.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Fable.html) |
 | **Paper Tetris** (Astra) | [`Tetris-Astra.html`](Tetris-Astra.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Astra.html) |
+| **Sketchbook Film** (GLM-5.3-Flash) | [`Tetris-GLM5-3-Flash-EXL3.html`](Tetris-GLM5-3-Flash-EXL3.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-GLM5-3-Flash-EXL3.html) |
 | Landing | [`index.html`](index.html) | [https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/) |
 
 Locally:
@@ -22,7 +23,7 @@ python3 -m http.server 8080
 
 Audio unlocks on the first click or keypress (browser autoplay rules).
 
-## The two versions
+## The versions
 
 ### Graphite Blocks — `Tetris-Fable.html`
 
@@ -41,6 +42,14 @@ A paper-and-ink arcade layout with rolling film grain, on-screen buttons, and ge
 - Hold, next piece, score / lines / level
 - Keyboard plus on-screen / touch controls
 - Mute for SFX and music independently
+
+### Sketchbook Film — `Tetris-GLM5-3-Flash-EXL3.html`
+
+Hand-inked paper well, rolling film grain, and generated tiles. Music is a Korobeiniki chiptune loop (off by default). Built with GLM-5.3-Flash.
+
+- 10×20 well, 7-bag randomizer, wall kicks, hold, next, ghost piece
+- Soft drop, hard drop, DAS / ARR, high score in `localStorage`
+- Independent mute for SFX and music (on-screen buttons or keys)
 
 ## Controls
 
@@ -79,14 +88,32 @@ Click or tap the title / game-over screen to start.
 
 On-screen buttons cover the same actions on a phone.
 
+### Sketchbook Film (GLM-5.3-Flash)
+
+| Action | Keys |
+| --- | --- |
+| Move | ← → |
+| Soft drop | ↓ |
+| Hard drop | Space |
+| Rotate clockwise | ↑ or X |
+| Rotate counter-clockwise | Z |
+| Hold | C |
+| Pause | P |
+| Restart | R |
+| Mute effects | M |
+| Mute music | N |
+
+Click or tap the playfield to start. On-screen buttons toggle music and sound.
+
 ## Repository layout
 
 ```
 .
-├── index.html            # GitHub Pages landing (links both games)
-├── Tetris-Fable.html     # Graphite Blocks
-├── Tetris-Astra.html     # Paper Tetris — Offline Edition
-├── LICENSE               # GNU Affero General Public License v3.0
+├── index.html                         # GitHub Pages landing (links all games)
+├── Tetris-Fable.html                  # Graphite Blocks
+├── Tetris-Astra.html                  # Paper Tetris — Offline Edition
+├── Tetris-GLM5-3-Flash-EXL3.html      # Sketchbook Film Edition
+├── LICENSE                            # GNU Affero General Public License v3.0
 └── README.md
 ```
 
