@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Two single-file retro Tetris games: Graphite Blocks (Fable) and Paper Tetris (Astra).">
+  <title>Retro Tetris — Fable vs Astra</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courier+Prime:wght@400;700&display=swap">
+  <style>
+    :root {
+      --booth: #17150f;
+      --paper: #e7e0ce;
+      --ink: #3a3833;
+      --sepia: #6b5b44;
+      --amber: #d8b25e;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      background: #17150f;
+      background-image: radial-gradient(120% 90% at 50% 40%, #2b261c 0%, #1b1811 50%, #100e09 100%);
+      color: #cfc4ac;
+      font-family: "Courier Prime", "Courier New", ui-monospace, monospace;
+      padding: 32px 20px 64px;
+    }
+    main { max-width: 920px; margin: 0 auto; }
+    header { text-align: center; margin-bottom: 36px; }
+    h1 {
+      font-family: "Architects Daughter", "Courier Prime", cursive;
+      font-weight: 400;
+      font-size: clamp(2rem, 6vw, 3.4rem);
+      color: var(--paper);
+      margin: 0 0 8px;
+      letter-spacing: 0.02em;
+    }
+    .sub {
+      color: #9a8e76;
+      font-size: 0.95rem;
+      max-width: 42em;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    a.card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid rgba(216, 178, 94, 0.22);
+      background: rgba(23, 21, 15, 0.55);
+      padding: 22px 22px 20px;
+      box-shadow: 0 18px 50px -20px rgba(0,0,0,.8);
+      transition: border-color .15s, transform .15s;
+    }
+    a.card:hover {
+      border-color: var(--amber);
+      transform: translateY(-2px);
+    }
+    .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin: 0 0 8px;
+    }
+    h2 {
+      font-family: "Architects Daughter", cursive;
+      font-weight: 400;
+      font-size: 1.7rem;
+      color: var(--paper);
+      margin: 0 0 10px;
+    }
+    p { margin: 0; line-height: 1.5; color: #b9ad93; font-size: 0.92rem; }
+    .play {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--amber);
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #7a7060;
+    }
+    footer a { color: #b9ad93; }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Fable vs Astra</h1>
+      <p class="sub">Two single-file falling-block games. Open either one — no install, no backend. Source is on GitHub under AGPL-3.0.</p>
+    </header>
+    <div class="grid">
+      <a class="card" href="Tetris-Fable.html">
+        <p class="label">Fable</p>
+        <h2>Graphite Blocks</h2>
+        <p>Colour pencil on 5mm graph paper, photographed on 16mm. Tiles, grain, and audio are generated in the browser.</p>
+        <span class="play">Play →</span>
+      </a>
+      <a class="card" href="Tetris-Astra.html">
+        <p class="label">Astra</p>
+        <h2>Paper Tetris</h2>
+        <p>A paper arcade cabinet with rolling film grain, on-screen controls, and generated sound. Fully offline.</p>
+        <span class="play">Play →</span>
+      </a>
+    </div>
+    <footer>
+      <a href="https://github.com/MiaAI-Lab/Retro-Tetris-Fable-vs-Astra">Source on GitHub</a>
+      · GNU Affero GPL v3.0
+    </footer>
+  </main>
+</body>
+</html>
