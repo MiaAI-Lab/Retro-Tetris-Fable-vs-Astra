@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Three single-file retro Tetris games: Graphite Blocks (Fable), Paper Tetris (Astra), and Sketchbook Film Edition (GLM-5.3-Flash).">
+  <meta name="description" content="Four single-file retro Tetris games: Graphite Blocks (Fable), Paper Tetris (Astra), Sketchbook Film Edition (GLM-5.3-Flash), and Pencil Tetris (Qwen3.8-Flash).">
   <title>Retro Tetris — Fable vs Astra</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courier+Prime:wght@400;700&display=swap">
@@ -43,7 +43,7 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 18px;
     }
     a.card {
@@ -99,7 +99,7 @@
   <main>
     <header>
       <h1>Fable vs Astra</h1>
-      <p class="sub">Three single-file falling-block games. Open any of them — no install, no backend. Source is on GitHub under AGPL-3.0.</p>
+      <p class="sub">Four single-file falling-block games. Open any of them — no install, no backend. Source is on GitHub under AGPL-3.0.</p>
     </header>
     <div class="grid">
       <a class="card" href="Tetris-Fable.html">
@@ -118,6 +118,12 @@
         <p class="label">GLM-5.3-Flash</p>
         <h2>Sketchbook Film</h2>
         <p>Ink-and-wash sketchbook well with rolling grain, Korobeiniki chiptune, and generated tiles. Hold, next, ghost, and high score.</p>
+        <span class="play">Play →</span>
+      </a>
+      <a class="card" href="Tetris-Qwen3.8-Flash.html">
+        <p class="label">Qwen3.8-Flash</p>
+        <h2>Pencil Tetris</h2>
+        <p>Crayon-scribble tiles on a wobbly pencil grid, aged graph paper and hand-lettered scoring. Korobeiniki music, off until you ask. One file, no assets.</p>
         <span class="play">Play →</span>
       </a>
     </div>

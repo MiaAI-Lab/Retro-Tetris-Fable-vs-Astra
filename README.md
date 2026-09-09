@@ -1,6 +1,6 @@
 # Retro Tetris: Fable vs Astra
 
-Three complete, single-file falling-block games. Same rules family, three visual languages — a colour-pencil sheet photographed on 16mm, a paper arcade cabinet with film grain, and a sketchbook film edition.
+Four complete, single-file falling-block games. Same rules family, four visual languages — a colour-pencil sheet photographed on 16mm, a paper arcade cabinet with film grain, a sketchbook film edition, and a crayon sheet on a pencil grid.
 
 No build step. No server. Open a file, or play them on GitHub Pages.
 
@@ -11,6 +11,7 @@ No build step. No server. Open a file, or play them on GitHub Pages.
 | **Graphite Blocks** (Fable) | [`Tetris-Fable.html`](Tetris-Fable.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Fable.html) |
 | **Paper Tetris** (Astra) | [`Tetris-Astra.html`](Tetris-Astra.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Astra.html) |
 | **Sketchbook Film** (GLM-5.3-Flash) | [`Tetris-GLM5-3-Flash-EXL3.html`](Tetris-GLM5-3-Flash-EXL3.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-GLM5-3-Flash-EXL3.html) |
+| **Pencil Tetris** (Qwen3.8-Flash) | [`Tetris-Qwen3.8-Flash.html`](Tetris-Qwen3.8-Flash.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Qwen3.8-Flash.html) |
 | Landing | [`index.html`](index.html) | [https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/) |
 
 Locally:
@@ -50,6 +51,16 @@ Hand-inked paper well, rolling film grain, and generated tiles. Music is a Korob
 - 10×20 well, 7-bag randomizer, wall kicks, hold, next, ghost piece
 - Soft drop, hard drop, DAS / ARR, high score in `localStorage`
 - Independent mute for SFX and music (on-screen buttons or keys)
+
+### Pencil Tetris — `Tetris-Qwen3.8-Flash.html`
+
+Drawn in crayon on a wobbly pencil grid over aged graph paper, with the scoring hand-lettered. Tiles, paper grain and the Korobeiniki tune are generated at runtime — no image or audio files ride along. Built with Qwen3.8-Flash.
+
+- 10×20 well, 7-bag randomizer, wall kicks, next queue
+- Soft drop, hard drop, DAS / ARR auto-repeat, on-screen buttons for touch
+- Scoring 100/300/500/800 per line times level, level up every 10 lines
+- Music is optional and off by default: M or the music button, remembered between visits
+- Sound stays silent while the game is paused, over, or hidden
 
 ## Controls
 
@@ -105,6 +116,21 @@ On-screen buttons cover the same actions on a phone.
 
 Click or tap the playfield to start. On-screen buttons toggle music and sound.
 
+### Pencil Tetris (Qwen3.8-Flash)
+
+| Action | Keys |
+| --- | --- |
+| Move | ← → |
+| Soft drop | ↓ |
+| Hard drop | Space |
+| Rotate clockwise | ↑ or X |
+| Rotate counter-clockwise | Z |
+| Pause | P or Esc |
+| Start / restart | Enter |
+| Music on / off | M |
+
+On-screen buttons cover the same actions, including music. Click or tap the board to start.
+
 ## Repository layout
 
 ```
@@ -113,6 +139,7 @@ Click or tap the playfield to start. On-screen buttons toggle music and sound.
 ├── Tetris-Fable.html                  # Graphite Blocks
 ├── Tetris-Astra.html                  # Paper Tetris — Offline Edition
 ├── Tetris-GLM5-3-Flash-EXL3.html      # Sketchbook Film Edition
+├── Tetris-Qwen3.8-Flash.html          # Pencil Tetris
 ├── LICENSE                            # GNU Affero General Public License v3.0
 └── README.md
 ```
