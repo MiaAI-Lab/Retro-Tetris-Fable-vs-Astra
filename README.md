@@ -1,6 +1,6 @@
 # Retro Tetris: Fable vs Astra
 
-Four complete, single-file falling-block games. Same rules family, four visual languages — a colour-pencil sheet photographed on 16mm, a paper arcade cabinet with film grain, a sketchbook film edition, and a crayon sheet on a pencil grid.
+Five complete, single-file falling-block games. Same rules family, five visual languages — a colour-pencil sheet photographed on 16mm, a paper arcade cabinet with film grain, a sketchbook film edition, a crayon sheet on a pencil grid, and a graph-paper well with CRT flicker.
 
 No build step. No server. Open a file, or play them on GitHub Pages.
 
@@ -12,6 +12,7 @@ No build step. No server. Open a file, or play them on GitHub Pages.
 | **Paper Tetris** (Astra) | [`Tetris-Astra.html`](Tetris-Astra.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Astra.html) |
 | **Sketchbook Film** (GLM-5.3-Flash) | [`Tetris-GLM5-3-Flash-EXL3.html`](Tetris-GLM5-3-Flash-EXL3.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-GLM5-3-Flash-EXL3.html) |
 | **Pencil Tetris** (Qwen3.8-Flash) | [`Tetris-Qwen3.8-Flash.html`](Tetris-Qwen3.8-Flash.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Tetris-Qwen3.8-Flash.html) |
+| **Graph Paper Retro** (Ling-3.0-flash-VL) | [`Retro-Tetris-Ling-VL.html`](Retro-Tetris-Ling-VL.html) | [Play](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/Retro-Tetris-Ling-VL.html) |
 | Landing | [`index.html`](index.html) | [https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/](https://miaai-lab.github.io/Retro-Tetris-Fable-vs-Astra/) |
 
 Locally:
@@ -61,6 +62,14 @@ Drawn in crayon on a wobbly pencil grid over aged graph paper, with the scoring 
 - Scoring 100/300/500/800 per line times level, level up every 10 lines
 - Music is optional and off by default: M or the music button, remembered between visits
 - Sound stays silent while the game is paused, over, or hidden
+
+### Graph Paper Retro — `Retro-Tetris-Ling-VL.html`
+
+Graph paper with a rolling film-grain overlay, scanlines, and a light CRT flicker. Tiles and sound are generated in the page. Built with Ling-3.0-flash-VL.
+
+- 10×20 well, next piece, ghost piece, line-clear animation
+- Soft drop, hard drop, pause, high score in `localStorage`
+- Generated SFX (on by default) and music (off until the on-screen button)
 
 ## Controls
 
@@ -131,6 +140,18 @@ Click or tap the playfield to start. On-screen buttons toggle music and sound.
 
 On-screen buttons cover the same actions, including music. Click or tap the board to start.
 
+### Graph Paper Retro (Ling-3.0-flash-VL)
+
+| Action | Keys |
+| --- | --- |
+| Move | ← → |
+| Soft drop | ↓ |
+| Hard drop | Space |
+| Rotate | ↑ |
+| Pause | P |
+
+Start and play again are on-screen buttons. SFX and music toggle from the corner buttons.
+
 ## Repository layout
 
 ```
@@ -140,6 +161,7 @@ On-screen buttons cover the same actions, including music. Click or tap the boar
 ├── Tetris-Astra.html                  # Paper Tetris — Offline Edition
 ├── Tetris-GLM5-3-Flash-EXL3.html      # Sketchbook Film Edition
 ├── Tetris-Qwen3.8-Flash.html          # Pencil Tetris
+├── Retro-Tetris-Ling-VL.html          # Graph Paper Retro (Ling-3.0-flash-VL)
 ├── LICENSE                            # GNU Affero General Public License v3.0
 └── README.md
 ```
